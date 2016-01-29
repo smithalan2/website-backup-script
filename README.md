@@ -6,7 +6,7 @@ ___
 ##Usage
 To use this script, Login to your server via SSH. CD to a folder on your server to store the backup script. If GIT is not already installed on your server run the following command.
 
-####Note - Ensure the file endings of the backup.sh file are set to Unix, not DOS.
+####Note - Ensure the line endings of the backup.sh file are set to Unix, not DOS.
 
 Debian
 
