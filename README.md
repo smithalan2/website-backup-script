@@ -1,12 +1,12 @@
 # Website Backup Script
 ___
-##Summary
+## Summary
 This a a Linux bash script for backing up the files and mysql database for a website to the server. It creates a zip file with a MySQL DB dump and zip of all the files.
 ___
-##Usage
+## Usage
 To use this script, Login to your server via SSH. CD to a folder on your server to store the backup script. If GIT is not already installed on your server run the following command.
 
-####Note - Ensure the line endings of the backup.sh file are set to Unix, not DOS.
+#### Note - Ensure the line endings of the backup.sh file are set to Unix, not DOS.
 
 Debian
 
@@ -40,35 +40,35 @@ Eg. 0 5 * * 6 /var/home/user/backup.sh
 This will execute the script at 05:05 every Saturday.
 
 _____
-##Configuration
+## Configuration
 A number of values need to be specified for the script to work. They are as listed below
 
-###MySQL User
+### MySQL User
 You should replace db_user with the database user with permission to access the database you wish to backup.
 
     mysql_user="db_user"
 
-###MySQL Password
+### MySQL Password
 You should replace db_pass with the password for the user mentioned above
 
     mysql_pass="db_pass"
 
-###MySQL Host
+### MySQL Host
 If needed you should change localhost to your database server. Generally you can keep it as localhost.
 
     mysql_host="localhost"
 
-###MySQL Database
+### MySQL Database
 This is the database you want to backup. Replace db_name with the name of the database.
 
     mysql_db="db_name"
 
-###File Directory
+### File Directory
 This is the directory containing any subfolders and files belonging to the website you wish to backup. Generally this is something along the lines of /var/www/html
 
     file_dir="/var/www/html/mysite"
 
-###Backup Folder
+### Backup Folder
 This is the directory where you wish to store the backups that are generated. Ideally
 this should be a directory that is not accessible via http. Do not include a trailing slash. This directory needs to be created before running this script.
 
